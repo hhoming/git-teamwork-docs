@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [1.管理项目](chapter1.md)
+* [1.管理项目](guanlixiangmu.md)
 * [2.版本控制](chapter1/yuan-dai-ma-guan-li.md)
 * [3.工作流程](liu-cheng-kong-zhi.md)
 * [4.约定规范](4yue-ding-gui-fan.md)
