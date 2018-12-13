@@ -3,7 +3,7 @@
 * [前言](README.md)
 * [1.管理项目](chapter1.md)
 * [2.版本控制](chapter1/yuan-dai-ma-guan-li.md)
-* [流程控制](liu-cheng-kong-zhi.md)
+* [3.工作流程](liu-cheng-kong-zhi.md)
 * [3.管理平台上协作](tuan-dui-xiang-mu-xie-zuo.md)
   * [3.1.TFS上的团队协作](tuan-dui-xiang-mu-xie-zuo/tfs.md)
   * [3.2.Gitlab上的团队协作](tuan-dui-xiang-mu-xie-zuo/gitlab.md)
