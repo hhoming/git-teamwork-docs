@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [Git](git.md)
+* [Git？](git.md)
 * [1.项目管理](chapter1.md)
 * [2.源代码管理](chapter1/yuan-dai-ma-guan-li.md)
 * [3.管理平台上协作](tuan-dui-xiang-mu-xie-zuo.md)
