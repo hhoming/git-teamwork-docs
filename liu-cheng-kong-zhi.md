@@ -64,6 +64,7 @@ git co dev #切换到dev分支。
  git push origin –delete tag 1.1.0-b2 #删除远程分支1.1.0-b2
  git push -f origin dev #使用本地dev分支强制更新远程dev分支
  git push -tags #推送本地tag到远程服务器
+ 
 ## 3.2. 工作流规范
 能够独立部署的工程使用master和dev两个主干分支，master分支对应线上版本，dev分支对应开发版本； 作为依赖库使用的工作只需要一个master分支即可。master和dev分支只能由开发组长合并及提交，其余人员需要在各自分支上进行开发工作。
 GIT提交尽量遵循单次提交的代码是对一个完整但是影响尽量小的功能的修改，不要把对几个功能的修改混在一起提交。
