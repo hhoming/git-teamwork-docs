@@ -1,7 +1,7 @@
-3.工作流程
+# 3.工作流程
 
 什么是Git工作流，什么是团队工作流程，定义怎样的工作流来对项目进行管理，并结合Git进行实际应用。
-3.1. Git命令的工作流程操作
+## 3.1. Git命令的工作流程操作
 1.别名配置(后续步骤基础)
 git config –global alias.st status #设置完后 git st = git status
  git config –global alias.ci commit
