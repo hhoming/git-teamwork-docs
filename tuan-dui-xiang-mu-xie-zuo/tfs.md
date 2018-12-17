@@ -9,7 +9,6 @@
 
 Visual Studio Team Foundation Server 2012 (TFS) 是 Microsoft 应用程序生命周期管理 (ALM) 解决方案的核心协作平台。 不论在本地还是 在云中，TFS 均可支持灵活的开发实践、 多个 IDE 和平台，并为您提供有效管理整个 IT 生命周期的软件开发项目所需的工具。
 
-
 下面链接是TFS使用视频：
 http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview-CHS/Visual-Studio-Ultimate-2012-Coordinate-your-team-with-agile-project-management-CHS
 
