@@ -1,5 +1,13 @@
 # 3.工作流程
 
+表 1. git-flow 分支类型
+分支类型	命名规范	创建自	合并到	说明
+feature	feature/*	develop	develop	新功能
+release	release/*	develop	develop 和 master	一次新版本的发布
+hotfix	hotfix/*	master	develop 和 master	生产环境中发现的紧急 bug 的修复
+
+
+
 什么是Git工作流，什么是团队工作流程，定义怎样的工作流来对项目进行管理，并结合Git进行实际应用。
 ## 3.1. Git命令的工作流程操作
 1.别名配置(后续步骤基础)
