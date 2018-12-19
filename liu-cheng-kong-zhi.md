@@ -112,11 +112,8 @@ stable - 用于发布稳定版本到预发环境，上游分支为 master，建�
 5.进行项目测试
 
 6.将master分支合并到stable，如果是新版本，则创建新stable分支
+，并为当前stable创建tag
 
-7.
-进行产品测试
-将master分支合并到stable，如果是新版本则创建一个新的stable分支
-为stable打上tag，并进行发布
 
 ### 3.1.2 命名规范
 
