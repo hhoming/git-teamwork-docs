@@ -111,7 +111,7 @@ stable - 用于发布稳定版本到预发环境，上游分支为 master，建�
 
 
 ``` git
-   git checkout -b $issue-feature-name
+   $ git checkout -b $issue-feature-name
 ```
 
 
