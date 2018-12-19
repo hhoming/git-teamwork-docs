@@ -15,7 +15,7 @@
 | **pre-production** | pre-production | master | production | 预生产分支 |
 | **production** | production | pre-production| - | 生产分支 |
 
-
+.
 **临时分支(_开发完成会被删除_)**：
 feature - 功能分支，用于新功能的开发，建议以issue/feature/name命名
 fix - 修复分支，用户bug的修复，建议以issue/fix/name命名
@@ -68,12 +68,12 @@ git push origin $issue-feature-name
 适用于发布周期长、有版本规划的项目，传统IT项目开发十分适用。
 ### 3.1.1 分支策略
 
-| 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
-| ------ | ------ | ------ | ------ | ------ |
-| feature|  feature/* | master | master | 功能分支 |
-| fix | fix/*| master | master | 修复分支 |
-| **master** | - | - | -| 开发分支 |
-| **stable** | stable | master | - | 稳定分支 |
+| 分支类型 | upstream | merge | 说明 |
+| ------ | ------ | ------ | ------ |
+| feature | - | master | 功能分支 |
+| fix | - | master | 修复分支 |
+| **master** | feature & fix | -| 开发分支 |
+| **stable** | master | - | 稳定分支 |
 
 **临时分支(_开发完成会被删除_)**：
 feature - 功能分支，用于新功能的开发，建议以issue/feature/name命名
