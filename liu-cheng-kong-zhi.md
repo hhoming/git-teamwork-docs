@@ -72,23 +72,24 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 分支最好从正式版的tag拉出，正式版tag查看。 分支名字必须有明确的含义，以方便管理。功能上线后，对应的分支应该及时删除。分支名字推荐的命名方法为：以user/开头，加task或者bug，再加禅道上对应的task或者bug的id。其中以user/开头为强制性规定。
 如果因注释而提交不成功，请按照常用操作的 重写上一次注释 和 重写前几次注释 的说明进行注释重写
 
-## 3.1. 工作流模型
+## 3.1. 持续发布
 
-### 3.1.1 持续发布
+### 3.1.1 分支策略
 
 表 1. 持续发布的分支策略
 
 | 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
-| feature| feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
+| feature|  feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
 | release | release/* | develop | develop 和 master | 一次新版本的发布 |
 | hotfix | vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名 |
 | **master** | - | - | -| 用于发布到预发环境 |
-| **pre-production** | pre-production | master | production | 发布到测试环境时使用 |
-| **production** | production | pre-production| - | 发布到正式环境 |
+| **pre-production** | pre-production | master | production | 预发环境 |
+| **production** | production | pre-production| - | 正式环境 |
 
 
-
+命名规范
+流程图
 
 
 持续发布适用于web等可以无缝更新的项目。
