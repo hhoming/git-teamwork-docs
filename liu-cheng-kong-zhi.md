@@ -17,6 +17,7 @@
 | **production** | 生产分支 | pre-production| - |
 
 
+
 **临时分支(_开发完成会被删除_)**：
 feature：功能分支，用于新功能的开发，建议以issue/feature/name命名
 fix：修复分支，用户bug的修复，建议以issue/fix/name命名
@@ -26,6 +27,7 @@ fix：修复分支，用户bug的修复，建议以issue/fix/name命名
 master：开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
 pre-production：预发分支，用于发布到预发环境，上游分支为 master
 production：生产分支，用于发布到正式环境，上游分支为 pre-production
+
 
 
 ### 3.1.2 流程图
