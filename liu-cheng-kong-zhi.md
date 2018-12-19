@@ -1,10 +1,6 @@
 # 3.工作流程
 
-表 1. git-flow 分支类型
-分支类型	命名规范	创建自	合并到	说明
-feature	feature/*	develop	develop	新功能
-release	release/*	develop	develop 和 master	一次新版本的发布
-hotfix	hotfix/*	master	develop 和 master	生产环境中发现的紧急 bug 的修复
+
 
 
 
@@ -80,11 +76,61 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 分支最好从正式版的tag拉出，正式版tag查看。 分支名字必须有明确的含义，以方便管理。功能上线后，对应的分支应该及时删除。分支名字推荐的命名方法为：以user/开头，加task或者bug，再加禅道上对应的task或者bug的id。其中以user/开头为强制性规定。
 如果因注释而提交不成功，请按照常用操作的 重写上一次注释 和 重写前几次注释 的说明进行注释重写
 
-## 3.2. 工作流程图
-
 ## 3.1. 开发情景
+
 ## 3.1.1 持续发布
 
+表 1. git-flow 分支类型
+分支类型	命名规范	创建自	合并到	说明
+feature	feature/*	develop	develop	新功能
+release	release/*	develop	develop 和 master	一次新版本的发布
+hotfix	hotfix/*	master	develop 和 master	生产环境中发现的紧急 bug 的修复
+
+
+
+
+
+持续发布适用于web等可以无缝更新的项目。
+分支约定
+临时分支：在开发完成会被删除
+
+功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
+修复分支fix - 用户bug的修复，建议以issue-fix-name命名
+
+固定分支
+
+开发分支 master - 用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
+预发分支 pre-production - 用于发布到预发环境，上游分支为 master
+正式分支 production - 用于发布到正式环境，上游分支为 pre-production
+使用流程
+
+克隆项目到本地
+
+git clone git@example.com:project-name.git
+
+
+检出分支
+
+git checkout -b $issue-feature-name
+
+
+提交并push到GitLab仓库
+
+git commit -am "My feature is ready"
+git push origin $issue-feature-name
+
+
+运行GitLab CI
+在GitLab上创建一个Merge Request
+项目管理者进行代码审查，合并到master
+
+运行第二次GitLab CI
+进行产品测试
+将master分支合并到pre-production
+
+运行第三次GitLab CI
+进行产品测试
+将pre-production分支合并到prouction，并且为prouction打上tag，保持prouction与线上代码一致
 
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
@@ -92,6 +138,8 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 
 
 ## 3.1.2 版本发布
+
+
 
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
