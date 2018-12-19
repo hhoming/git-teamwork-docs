@@ -84,7 +84,7 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 | **master** | - | - | | 用于发布到预发环境 |
 | **pre-production** | pre-production | -master | production | 发布到测试环境时使用 |
 | release | release/* | develop | develop 和 master | 一次新版本的发布|
-| hotfi	|vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名|
+| hotfix|vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名|
 
 
 持续发布适用于web等可以无缝更新的项目。
