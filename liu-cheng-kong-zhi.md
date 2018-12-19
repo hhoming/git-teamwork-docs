@@ -67,9 +67,6 @@ git push origin $issue-feature-name
 ### 3.1.2 命名规范
 
 
-## 3.1. 持续发布
-
-### 3.1.1 分支策略
 
 
 ## 3.2 版本发布
