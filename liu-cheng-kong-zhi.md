@@ -102,7 +102,7 @@ stable - 用于发布稳定版本到预发环境，上游分支为 master，建�
 2.检出分支
 
    
-```
+``` 
    //this is test methods
    private void test(){
       system.out.printf("this is test methods!");
