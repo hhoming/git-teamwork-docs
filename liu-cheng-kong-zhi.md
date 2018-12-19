@@ -85,31 +85,31 @@ stable - 用于发布稳定版本到预发环境，上游分支为 master，建�
 
 ### 3.1.2 流程图
 **（工作流程图）**
-![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
+
 
 ### 3.1.3 Git命令下的应用
 
-使用流程
+ 1.克隆项目到本地
 
-克隆项目到本地
-
-git clone git@example.com:project-name.git
-
-
-检出分支
-
-git checkout -b $issue-feature-name
+    
+    git clone git@example.com:project-name.git
 
 
-提交并push到GitLab仓库
+2.检出分支
 
-git commit -am "My feature is ready"
-git push origin $issue-feature-name
+    
+    git checkout -b $issue-feature-name
 
 
-运行GitLab CI
-在GitLab上创建一个Merge Request
-项目管理者进行代码审查，合并到master
+3.提交并push到GitLab仓库
+
+    git commit -am "My feature is ready"
+    git push origin $issue-feature-name
+
+4.项目管理者进行代码审查，合并到master
+5.进行项目测试
+
+6.将master分支合并到stable，如果是上线版本，则创建新stable分支
 
 运行第二次GitLab CI
 进行产品测试
