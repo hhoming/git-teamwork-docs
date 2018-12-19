@@ -4,28 +4,27 @@
 ## 3.1. 持续发布
 ### 3.1.1 分支策略
 
-持续发布适用于web等可以无缝更新的项目。
+适用于web等可以无缝更新的项目。
 
 
 | 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
-| feature|  feature/* | develop | master |  |
-| hotfix | hotfix/*| master | develop 和 master |  |
-| **master** | - | - | -|  |
-| **pre-production** | pre-production | master | production | 预发环境 |
-| **production** | production | pre-production| - | 正式环境 |
+| feature|  feature/* | master | master | 功能分支 |
+| hotfix | hotfix/*| master | master | 修复分支 |
+| **master** | - | - | -| 开发测试分支 |
+| **pre-production** | pre-production | master | production | 预生产分支 |
+| **production** | production | pre-production| - | 生产分支 |
 
 
 临时分支：在开发完成会被删除
-功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
-修复分支fix - 用户bug的修复，建议以issue-fix-name命名
+feature - 功能分支，用于新功能的开发，建议以issue-feature-name命名
+fix - 修复分支，用户bug的修复，建议以issue-fix-name命名
 
-固定分支
+固定分支：
+master - 开发分支,用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
+pre-production - 预发分支,用于发布到预发环境，上游分支为 master
+production - 生产分支,用于发布到正式环境，上游分支为 pre-production
 
-开发分支 master - 用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
-预发分支 pre-production - 用于发布到预发环境，上游分支为 master
-正式分支 production - 用于发布到正式环境，上游分支为 pre-production
-使用流程
 
 ### 3.1.2 流程图
 **（工作流程图）**
