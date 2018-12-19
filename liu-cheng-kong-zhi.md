@@ -79,7 +79,7 @@ git push origin $issue-feature-name
 
 **临时分支(_开发完成会被删除_)**：
 feature - 功能分支，用于新功能的开发，建议以issue/feature/name命名
-fix - 修复分支，用户bug的修复，建议以issue-fix-name命名
+fix - 修复分支，用户bug的修复，建议以issue/fix/name命名
 
 **固定分支**：
 master - 开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
