@@ -7,13 +7,13 @@
 ### 3.1.1 分支策略
 
 
-| 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
+| 分支类型 | 名称 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
-| feature|  feature/* | master | master | 功能分支 |
-| fix | fix/*| master | master | 修复分支 |
-| **master** | - | - | -| 开发测试分支 |
-| **pre-production** | pre-production | master | production | 预生产分支 |
-| **production** | production | pre-production| - | 生产分支 |
+| feature|  功能分支 | master | master |  |
+| fix | 修复分支 | master | master |  |
+| **master** | 开发分支 | - | -|  |
+| **pre-production** | 预生产分支 | master | production |  |
+| **production** | 生产分支 | pre-production| - |  |
 
 .
 **临时分支(_开发完成会被删除_)**：
