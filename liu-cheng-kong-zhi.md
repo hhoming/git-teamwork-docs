@@ -9,10 +9,9 @@
 
 | 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
-| feature|  feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
-| release | release/* | develop | develop 和 master | 一次新版本的发布 |
-| hotfix | vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名 |
-| **master** | - | - | -| 用于发布到预发环境 |
+| feature|  feature/* | develop | master |  |
+| hotfix | hotfix/*| master | develop 和 master |  |
+| **master** | - | - | -|  |
 | **pre-production** | pre-production | master | production | 预发环境 |
 | **production** | production | pre-production| - | 正式环境 |
 
