@@ -2,6 +2,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在需要定义一套工作流来对项目进行管理呢，这一节我们会给出实际方案并结合Git进行实际应用演示。在本章节，选用了Gitlab推荐的工作流模型--Gitlab Flow，结合了gitflow与GitHubFlow的Gitlab Flow针对于持续发布与版本发布型项目都有相应的分支策略，来看看在不同的分支策略下工作流程的流转。
 
 ## 3.1. 持续发布
+
 适用于web等可以无缝更新的项目。
 
 ### 3.1.1 分支策略
