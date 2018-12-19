@@ -31,7 +31,7 @@ production - 生产分支，用于发布到正式环境，上游分支为 pre-pr
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
 
-### 3.1.3 Git命令下应用
+### 3.1.3 Git命令应用
 克隆项目到本地
 
 git clone git@example.com:project-name.git
