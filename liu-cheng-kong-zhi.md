@@ -84,28 +84,41 @@ fix - 修复分支，用户bug的修复，建议以issue-fix-name命名
 
 **固定分支**：
 master - 开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
-pre-production - 预发分支，用于发布到预发环境，上游分支为 master
-production - 生产分支，用于发布到正式环境，上游分支为 pre-production
-
-
-分支约定
-临时分支：在开发完成会被删除
-
-功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
-修复分支fix - 用户bug的修复，建议以issue-fix-name命名
-
-固定分支
-
-开发分支 master - 用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
-发布分支 stable - 用于发布到预发环境，上游分支为 master，建议以version-stable命名，该分支要尽可能晚的创建，每次更新此分支都要更新一个小版本号
-
+stable - 用于发布到预发环境，上游分支为 master，建议以version-stable命名，该分支要尽可能晚的创建，每次更新此分支都要更新一个小版本号
 
 ### 3.1.2 流程图
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
 ### 3.1.3 Git命令下应用
-### 3.1.2 命名规范
 
+使用流程
+
+克隆项目到本地
+
+git clone git@example.com:project-name.git
+
+
+检出分支
+
+git checkout -b $issue-feature-name
+
+
+提交并push到GitLab仓库
+
+git commit -am "My feature is ready"
+git push origin $issue-feature-name
+
+
+运行GitLab CI
+在GitLab上创建一个Merge Request
+项目管理者进行代码审查，合并到master
+
+运行第二次GitLab CI
+进行产品测试
+将master分支合并到stable，如果是新版本则创建一个新的stable分支
+为stable打上tag，并进行发布
+
+### 3.1.2 命名规范
 
 
 
