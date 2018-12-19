@@ -136,8 +136,7 @@ git push origin $issue-feature-name
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
 
 
-
-## 3.1.2 版本发布
+### 3.1.2 版本发布
 
 
 
