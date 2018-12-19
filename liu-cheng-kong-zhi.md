@@ -1,5 +1,90 @@
 # 3.工作流程
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是Git工作流，什么是团队工作流程，定义怎样的工作流来对项目进行管理，并结合Git进行实际应用。
+
+
+## 3.1. 持续发布
+
+### 3.1.1 分支策略
+
+持续发布适用于web等可以无缝更新的项目。
+
+
+| 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
+| ------ | ------ | ------ | ------ | ------ |
+| feature|  feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
+| release | release/* | develop | develop 和 master | 一次新版本的发布 |
+| hotfix | vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名 |
+| **master** | - | - | -| 用于发布到预发环境 |
+| **pre-production** | pre-production | master | production | 预发环境 |
+| **production** | production | pre-production| - | 正式环境 |
+
+
+分支约定
+临时分支：在开发完成会被删除
+功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
+修复分支fix - 用户bug的修复，建议以issue-fix-name命名
+
+固定分支
+
+开发分支 master - 用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
+预发分支 pre-production - 用于发布到预发环境，上游分支为 master
+正式分支 production - 用于发布到正式环境，上游分支为 pre-production
+使用流程
+
+### 3.1.2 流程图
+**（工作流程图）**
+![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
+
+### 3.1.3 Git命令下应用
+克隆项目到本地
+
+git clone git@example.com:project-name.git
+
+
+检出分支
+
+git checkout -b $issue-feature-name
+
+
+提交并push到GitLab仓库
+
+git commit -am "My feature is ready"
+git push origin $issue-feature-name
+
+
+运行GitLab CI
+在GitLab上创建一个Merge Request
+项目管理者进行代码审查，合并到master
+
+运行第二次GitLab CI
+进行产品测试
+将master分支合并到pre-production
+
+运行第三次GitLab CI
+进行产品测试
+将pre-production分支合并到prouction，并且为prouction打上tag，保持prouction与线上代码一致
+
+### 3.1.2 命名规范
+
+
+## 3.1. 持续发布
+
+### 3.1.1 分支策略
+
+
+## 3.2 版本发布
+
+
+**（工作流程图）**
+![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
+
+
+
+
+
+
+
+
 ## 3.1. Git命令的工作流程操作
 1.别名配置(后续步骤基础)
 git config –global alias.st status #设置完后 git st = git status
@@ -70,84 +155,5 @@ GIT提交尽量遵循单次提交的代码是对一个完整但是影响尽量�
 GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务或者BUG的ID，再加半角冒号开头。 注释最少应该写清楚本次做的修改和达到的效果，越详细越好。 注释首行的字符数应该在15-120个之间。如果注释长度多于120字符，则首行写概要性信息，空一行，然后写详细信息，类似于邮件格式。
 分支最好从正式版的tag拉出，正式版tag查看。 分支名字必须有明确的含义，以方便管理。功能上线后，对应的分支应该及时删除。分支名字推荐的命名方法为：以user/开头，加task或者bug，再加禅道上对应的task或者bug的id。其中以user/开头为强制性规定。
 如果因注释而提交不成功，请按照常用操作的 重写上一次注释 和 重写前几次注释 的说明进行注释重写
-
-## 3.1. 持续发布
-
-### 3.1.1 分支策略
-
-持续发布适用于web等可以无缝更新的项目。
-
-
-| 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
-| ------ | ------ | ------ | ------ | ------ |
-| feature|  feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
-| release | release/* | develop | develop 和 master | 一次新版本的发布 |
-| hotfix | vhotfix/*| master | develop 和 master | 发现的紧急Bug，建议以issue-fix-name命名 |
-| **master** | - | - | -| 用于发布到预发环境 |
-| **pre-production** | pre-production | master | production | 预发环境 |
-| **production** | production | pre-production| - | 正式环境 |
-
-
-分支约定
-临时分支：在开发完成会被删除
-功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
-修复分支fix - 用户bug的修复，建议以issue-fix-name命名
-
-固定分支
-
-开发分支 master - 用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
-预发分支 pre-production - 用于发布到预发环境，上游分支为 master
-正式分支 production - 用于发布到正式环境，上游分支为 pre-production
-使用流程
-
-
-
-### 3.1.2 流程图
-**（工作流程图）**
-![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
-
-### 3.1.3 Git命令下应用
-克隆项目到本地
-
-git clone git@example.com:project-name.git
-
-
-检出分支
-
-git checkout -b $issue-feature-name
-
-
-提交并push到GitLab仓库
-
-git commit -am "My feature is ready"
-git push origin $issue-feature-name
-
-
-运行GitLab CI
-在GitLab上创建一个Merge Request
-项目管理者进行代码审查，合并到master
-
-运行第二次GitLab CI
-进行产品测试
-将master分支合并到pre-production
-
-运行第三次GitLab CI
-进行产品测试
-将pre-production分支合并到prouction，并且为prouction打上tag，保持prouction与线上代码一致
-
-### 3.1.2 命名规范
-
-
-
-
-
-
-### 3.2 版本发布
-
-
-
-**（工作流程图）**
-![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
-
 
 
