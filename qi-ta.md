@@ -1,5 +1,6 @@
 ## 附录
 安装Git 
+安装SourceTree
 安装Gitlab
 安装TFS
 

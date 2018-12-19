@@ -1,9 +1,7 @@
 # 3.工作流程
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是Git工作流，什么是团队工作流程，定义怎样的工作流来对项目进行管理，并结合Git进行实际应用。
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上一章节有提到什么是Git工作流，什么是团队工作流程，定义怎样的工作流来对项目进行管理，并结合Git进行实际应用演示。在本章节，选用了Gitlab推荐的工作流模型--Gitlab Flow，结合了gitflow与GitHubFlow的Gitlab Flow针对于持续发布与版本发布型项目都有相应的分支策略，来看看在不同的分支策略下工作流程的流转情况吧。
 
 ## 3.1. 持续发布
-
 ### 3.1.1 分支策略
 
 持续发布适用于web等可以无缝更新的项目。
@@ -19,7 +17,6 @@
 | **production** | production | pre-production| - | 正式环境 |
 
 
-分支约定
 临时分支：在开发完成会被删除
 功能分支 feature - 用于新功能的开发，建议以issue-feature-name命名
 修复分支fix - 用户bug的修复，建议以issue-fix-name命名
