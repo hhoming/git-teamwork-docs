@@ -7,7 +7,7 @@
 ### 3.1.1 分支策略
 
 
-| 分支类型 | 类型名称 |	创建自 | 合并到 | 
+| 分支类型 | 类型名称 |	创建自 | 合并至 | 
 | ------ | ------ | ------ | ------ | 
 | feature|  功能分支 | master | master |  
 | fix | 修复分支 | master | master |  
@@ -68,10 +68,10 @@ git push origin $issue-feature-name
 适用于发布周期长、有版本规划的项目，传统IT项目开发十分适用。
 ### 3.1.1 分支策略
 
-| 分支类型 | 类型名称 | 上游分支 | 合并至 |
+| 分支类型 | 类型名称 | 创建自 | 合并至 |
 | ------ | ------ | ------ | ------ |
-| feature | 功能分支 | - | master |
-| fix | 修复分支 | - | master |
+| feature | 功能分支 | master | master |
+| fix | 修复分支 | master | master |
 | **master** | 开发分支 | feature & fix | stable |
 | **stable** | 稳定分支 | master | - | 
 
