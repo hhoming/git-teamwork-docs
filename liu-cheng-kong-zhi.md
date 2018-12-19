@@ -71,7 +71,7 @@ git push origin $issue-feature-name
 | 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
 | feature|  feature/* | master | master | 功能分支 |
-| hotfix | hotfix/*| master | master | 修复分支 |
+| fix | fix/*| master | master | 修复分支 |
 | **master** | - | - | -| 开发测试分支 |
 | **pre-production** | pre-production | master | production | 预生产分支 |
 | **production** | production | pre-production| - | 生产分支 |
