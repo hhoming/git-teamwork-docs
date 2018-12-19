@@ -87,11 +87,6 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 | **pre-production** | pre-production | master | production | 预发环境 |
 | **production** | production | pre-production| - | 正式环境 |
 
-
-命名规范
-流程图
-
-
 持续发布适用于web等可以无缝更新的项目。
 分支约定
 临时分支：在开发完成会被删除
@@ -105,6 +100,12 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 正式分支 production - 用于发布到正式环境，上游分支为 pre-production
 使用流程
 
+
+
+### 3.1.2 流程图
+
+
+### 3.1.3 Git命令下应用
 克隆项目到本地
 
 git clone git@example.com:project-name.git
@@ -132,6 +133,15 @@ git push origin $issue-feature-name
 运行第三次GitLab CI
 进行产品测试
 将pre-production分支合并到prouction，并且为prouction打上tag，保持prouction与线上代码一致
+
+流程图
+
+
+命名规范
+
+
+
+
 
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
