@@ -68,12 +68,12 @@ git push origin $issue-feature-name
 适用于发布周期长、有版本规划的项目，传统IT项目开发十分适用。
 ### 3.1.1 分支策略
 
-| 分支类型 | upstream | merge | 说明 |
+| 分支类型 | 名称 | 上游分支 | 合并至 |
 | ------ | ------ | ------ | ------ |
-| feature | - | master | 功能分支 |
-| fix | - | master | 修复分支 |
-| **master** | feature & fix | -| 开发分支 |
-| **stable** | master | - | 稳定分支 |
+| feature | 功能分支 | - | master |
+| fix | 修复分支 | - | master |
+| **master** | 开发分支 | feature & fix | -|
+| **stable** | 稳定分支 | master | - | 
 
 **临时分支(_开发完成会被删除_)**：
 feature - 功能分支，用于新功能的开发，建议以issue/feature/name命名
