@@ -80,13 +80,10 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 
 | 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
 | ------ | ------ | ------ | ------ | ------ |
-| feature | feature/* | develop | 用于新功能的开发 |  |
+| feature | feature/* | develop | master | 用于新功能的开发，建议以issue-feature-name命名 |
 | master|  |  | | 发布到测试环境时使用 |
 | release | release/* | develop | develop 和 master | 一次新版本的发布|
-|hotfix	|vhotfix/*|	master|	develop 和 master|	生产环境中发现的紧急 bug 的修复|
-
-
-
+|hotfix	|vhotfix/*|	master|	develop 和 master|	发现的紧急Bug，建议以issue-fix-name命名|
 
 
 持续发布适用于web等可以无缝更新的项目。
