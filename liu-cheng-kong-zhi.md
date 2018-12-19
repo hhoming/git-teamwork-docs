@@ -84,9 +84,13 @@ GIT注释的第一行必须以小写task或者bug，加禅道上对应的任务�
 
 
 |--|--|--|--|
-分支类型	命名规范	创建自	合并到	说明
-feature	feature/*	develop	develop	新功能
-release	release/*	develop	develop 和 master	一次新版本的发布
+			
+
+
+| 分支类型 | 命名规范 |	创建自 | 合并到 | 说明 |
+| ------ | ------ | ------ | ------ | ------ |
+| feature | feature/* | develop | develop新功能 |  |
+| release | release/* | develop | develop 和 master | 一次新版本的发布
 hotfix	hotfix/*	master	develop 和 master	生产环境中发现的紧急 bug 的修复
 
 
