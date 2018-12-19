@@ -72,7 +72,7 @@ git push origin $issue-feature-name
 | ------ | ------ | ------ | ------ |
 | feature | 功能分支 | master | master |
 | fix | 修复分支 | master | master |
-| **master** | 开发分支 | feature & fix | stable |
+| **master** | 开发分支 | - | stable |
 | **stable** | 稳定分支 | master | - | 
 
 **临时分支(_开发完成会被删除_)**：
