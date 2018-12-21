@@ -153,7 +153,7 @@ git push origin $issue-feature-name
 
 ### 3.1.2 分支命名规范
 
-
+https://www.jianshu.com/p/9a25e8eae32e
 
 
 
