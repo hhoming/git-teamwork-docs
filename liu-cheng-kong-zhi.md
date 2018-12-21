@@ -1,5 +1,5 @@
 http://www.cnblogs.com/mcgrady/p/5131318.html
-
+https://www.zybuluo.com/Sweetfish/note/573434
 
 # 3.制定工作流
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本章中，通过实际方案并结合Git进行实际应用进行演示。在本章节，选用了Gitlab推荐的工作流模型--Gitlab Flow，Gitlab Flow针对于持续发布与版本发布型项目都有相应的分支策略，来看看在不同的分支策略下工作流程的流转。

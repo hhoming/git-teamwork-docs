@@ -1,5 +1,9 @@
 https://www.cnblogs.com/MonaSong/p/6362265.html
 https://blog.csdn.net/leiocai/article/details/78991189
+
+https://blog.csdn.net/sinat_38566034/article/details/76065284
+
+
 # 2. 版本控制
 让团队成员了解Git，为什么要使用Git进行团队，使用Git能对团队有哪些帮助，
 Git的基本操作。
