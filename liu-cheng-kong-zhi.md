@@ -35,7 +35,7 @@
 **（工作流程图）**
 ![](/assets/6e7e60de-e689-3380-b866-9d438458b450.png)
 
-### 3.1.3 开发实际应用
+### 3.1.3 实际应用
 
 克隆项目到本地
 
@@ -83,16 +83,19 @@ git push origin $issue-feature-name
 | **master** | 开发分支 | - | stable |
 | **stable** | 稳定分支 | master | - | 
 
-**临时分支(_开发完成会被删除_)**：
-
- - feature ： 功能分支，用于新功能的开发，建议以issue/feature/name命名
- - fix ： 修复分支，用户bug的修复，建议以issue/fix/name命名
 
 **固定分支**：
 
  - master ： 开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
  - stable ： 用于发布稳定版本到预发环境，上游分支为 master，建议以version-
 stable命名，该分支要尽可能晚的创建，每次更新此分支都要更新一个小版本号
+
+**临时分支(_开发完成会被删除_)**：
+
+ - feature ： 功能分支，用于新功能的开发，建议以issue/feature/name命名
+ - fix ： 修复分支，用户bug的修复，建议以issue/fix/name命名
+
+
 
 **下图为Gitlab官方给出的分支图：**
 ![](/assets/版本发布.png)
@@ -101,7 +104,8 @@ stable命名，该分支要尽可能晚的创建，每次更新此分支都要�
 **（工作流程图）**
 
 
-### 3.1.3 开发实际应用
+### 3.1.3 实际应用
+
 
 
 **场景：**
