@@ -28,6 +28,7 @@
  - pre-production：预发分支，用于发布到预发环境，上游分支为master
  - production：生产分支，用于发布到正式环境，上游分支为pre-production
 
+**下图为Gitlab官方给出的分支图：**
 ![](/assets/持续发布.png)
 
 ### 3.1.2 流程图
@@ -93,7 +94,7 @@ git push origin $issue-feature-name
  - stable ： 用于发布稳定版本到预发环境，上游分支为 master，建议以version-
 stable命名，该分支要尽可能晚的创建，每次更新此分支都要更新一个小版本号
 
-下图为Gitlab官方给出的分支图
+下图为Gitlab官方给出的分支图：
 ![](/assets/版本发布.png)
 
 ### 3.1.2 流程图
