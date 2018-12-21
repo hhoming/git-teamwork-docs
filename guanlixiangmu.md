@@ -1,3 +1,5 @@
+https://kb.cnblogs.com/page/145207/
+
 ## 1.团队开发
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为实现成功的、基于团队的软件开发项目，有多种元素、过程和角色结合在一起。在这一章节主要关注：
