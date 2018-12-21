@@ -142,9 +142,6 @@ git push origin $issue-feature-name
 **<<<< Bug修复环节 >>>>**
 
 
-**假设场景2-:**
-
-
 
 
 
