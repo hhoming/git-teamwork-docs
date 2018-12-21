@@ -16,17 +16,18 @@
 | **pre-production** | 预生产分支 | master | production | 
 | **production** | 生产分支 | pre-production| - |
 
+**固定分支**：
+
+ - master：开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
+ - pre-production：预发分支，用于发布到预发环境，上游分支为master
+ - production：生产分支，用于发布到正式环境，上游分支为pre-production
 
 **临时分支(_开发完成会被删除_)**：
 
  - feature：功能分支，用于新功能的开发，以feature/name命名
  - fix：修复分支，用户bug的修复，以fix/name命名
 
-**固定分支**：
 
- - master：开发分支，用于发布到测试环境，上游分支为 feature 和 fix，该分支为受保护分支
- - pre-production：预发分支，用于发布到预发环境，上游分支为master
- - production：生产分支，用于发布到正式环境，上游分支为pre-production
 
 **下图为Gitlab官方给出的分支图：**
 ![](/assets/持续发布.png)
