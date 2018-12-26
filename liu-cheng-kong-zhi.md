@@ -102,7 +102,7 @@ stable命名，该分支要尽可能晚的创建，每次更新此分支都要�
  - feature ： 功能分支，用于新功能的开发，建议以issue/feature/name命名
  - fix ： 修复分支，用户bug的修复，建议以issue/fix/name命名
 
-
+![](/assets/git分支模型.png)
 
 **下图为Gitlab官方给出的分支图：**
 ![](/assets/版本发布.png)
