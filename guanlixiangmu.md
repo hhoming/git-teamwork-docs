@@ -6,7 +6,7 @@ https://kb.cnblogs.com/page/145207/
 - 开发过程
 - 项目管理过程
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下图展示了与团队开发相关的典型软件开发过程间的关系，以及成熟的代码管理平台需要为这些过程提供的基础设施。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下图展示了与团队开发相关的典型软件开发过程间的关系，以及成熟的代码管理平台完成这些过程需提供的基础设施。
 
 ![图1.1 团队开发](/assets/团队开发.png)
 
