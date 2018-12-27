@@ -2,12 +2,11 @@ https://kb.cnblogs.com/page/145207/
 
 ## 1.团队开发
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为实现成功的、基于团队的软件开发项目，有多种元素、过程和角色结合在一起。在这一章节主要关注：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于团队开发一个成功的软件项目，有多种元素、过程和角色结合在一起。在这一章节主要关注：
 - 开发过程
-- 生成过程
 - 项目管理过程
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下图展示了与团队开发相关的典型软件开发过程间的关系，以及可如何利用成熟的代码管理平台来为这些计划提供水平基础。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下图展示了与团队开发相关的典型软件开发过程间的关系，以及成熟的代码管理平台需要为这些过程提供的基础设施。
 
 ![图1.1 团队开发](/assets/团队开发.png)
 
