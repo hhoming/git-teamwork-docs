@@ -5,7 +5,7 @@ https://kb.cnblogs.com/page/145207/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于团队开发一个成功的软件项目，有多种元素、过程和角色结合在一起。下图展示了与团队开发相关的典型软件开发过程间的关系，以及成熟的代码管理平台完成这些过程需提供的基础设施类型。
 
 
-![图1.1 团队开发](/assets/团队开发.png "fffffff")
+![图1.1 团队开发](/assets/团队开发.png)
 
 
 ![](-/assets/团队开发角色.png)
