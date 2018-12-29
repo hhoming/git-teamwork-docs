@@ -1,5 +1,8 @@
 https://kb.cnblogs.com/page/145207/
 https://blog.csdn.net/mujushi/article/details/79790095
+https://upload-images.jianshu.io/upload_images/5283790-bfabcd904826f126.jpeg
+
+https://www.linuxidc.com/Linux/2017-05/144174.htm
 # 1.团队开发
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于团队开发一个成功的软件项目，需要有多种元素、过程和角色结合在一起。下图展示了与团队开发相关的典型软件开发过程间的关系，以及成熟的代码管理平台完成这些过程需提供的基础设施类型。
